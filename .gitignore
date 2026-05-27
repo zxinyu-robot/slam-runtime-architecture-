@@ -1,0 +1,16 @@
+# Build artifacts
+build/
+out/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env.local
