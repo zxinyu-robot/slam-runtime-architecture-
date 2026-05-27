@@ -1,5 +1,6 @@
 add_library(slam_tools
   logging.cpp
+  lvo.cpp
 )
 
 target_include_directories(slam_tools
