@@ -50,7 +50,7 @@ Optimizer backend (GTSAM / Ceres / test double)
 
 ## 快速开始
 
-要求：CMake 3.20+、Ninja 和支持 C++20 的编译器。
+要求：CMake 3.20+、Make 和支持 C++20 的编译器。
 
 ```bash
 cmake --preset default
