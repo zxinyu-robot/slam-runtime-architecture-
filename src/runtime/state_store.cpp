@@ -3,7 +3,7 @@
 #include <functional>
 #include <utility>
 
-namespace slam::runtime {
+namespace fork_spatial::runtime {
 namespace {
 
 void hash_combine(std::size_t& seed, std::size_t value) {
@@ -92,4 +92,4 @@ bool StateStore::can_transition(StateLifecycle from, StateLifecycle to) {
     return false;
 }
 
-}  // namespace slam::runtime
+}  // namespace fork_spatial::runtime

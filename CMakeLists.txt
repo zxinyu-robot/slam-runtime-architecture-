@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.20)
-project(slam LANGUAGES CXX)
+project(
+  fork_spatial_runtime
+  VERSION 0.1.0
+  DESCRIPTION "Backend-agnostic incremental spatial-state runtime"
+  LANGUAGES CXX
+)
 
 include(CTest)
 
@@ -7,11 +12,10 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-option(SLAM_BUILD_EXAMPLES "Build C++ examples" ON)
+option(FSR_BUILD_EXAMPLES "Build the runtime demo" ON)
 
 add_subdirectory(src)
-add_subdirectory(pyxxx)
 
-if(SLAM_BUILD_EXAMPLES)
+if(FSR_BUILD_EXAMPLES OR BUILD_TESTING)
   add_subdirectory(examples/cpp)
 endif()

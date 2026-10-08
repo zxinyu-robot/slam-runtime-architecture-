@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <utility>
 
-namespace slam::runtime {
+namespace fork_spatial::runtime {
 namespace {
 
 SubmitResult failure(SubmitCode code, std::string message, std::uint64_t version) {
@@ -208,4 +208,4 @@ SubmitResult SpatialRuntime::validate_factor(
     return SubmitResult{SubmitCode::Accepted, {}, graph_version_};
 }
 
-}  // namespace slam::runtime
+}  // namespace fork_spatial::runtime

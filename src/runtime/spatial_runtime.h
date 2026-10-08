@@ -1,5 +1,5 @@
-#ifndef SLAM_RUNTIME_SPATIAL_RUNTIME_H
-#define SLAM_RUNTIME_SPATIAL_RUNTIME_H
+#ifndef FORK_SPATIAL_RUNTIME_SPATIAL_RUNTIME_H
+#define FORK_SPATIAL_RUNTIME_SPATIAL_RUNTIME_H
 
 #include "runtime/interfaces.h"
 #include "runtime/state_store.h"
@@ -8,7 +8,7 @@
 #include <mutex>
 #include <unordered_set>
 
-namespace slam::runtime {
+namespace fork_spatial::runtime {
 
 class SpatialRuntime {
 public:
@@ -38,6 +38,6 @@ private:
     std::uint64_t graph_version_{};
 };
 
-}  // namespace slam::runtime
+}  // namespace fork_spatial::runtime
 
 #endif

@@ -1,5 +1,5 @@
-#ifndef SLAM_RUNTIME_INTERFACES_H
-#define SLAM_RUNTIME_INTERFACES_H
+#ifndef FORK_SPATIAL_RUNTIME_INTERFACES_H
+#define FORK_SPATIAL_RUNTIME_INTERFACES_H
 
 #include "runtime/model.h"
 
@@ -8,7 +8,7 @@
 #include <string>
 #include <vector>
 
-namespace slam::runtime {
+namespace fork_spatial::runtime {
 
 struct MeasurementEnvelope {
     std::string sensor_id;
@@ -79,6 +79,6 @@ private:
     Timestamp lag_ns_;
 };
 
-}  // namespace slam::runtime
+}  // namespace fork_spatial::runtime
 
 #endif

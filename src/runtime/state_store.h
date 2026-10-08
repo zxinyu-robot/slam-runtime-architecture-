@@ -1,5 +1,5 @@
-#ifndef SLAM_RUNTIME_STATE_STORE_H
-#define SLAM_RUNTIME_STATE_STORE_H
+#ifndef FORK_SPATIAL_RUNTIME_STATE_STORE_H
+#define FORK_SPATIAL_RUNTIME_STATE_STORE_H
 
 #include "runtime/model.h"
 
@@ -8,7 +8,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace slam::runtime {
+namespace fork_spatial::runtime {
 
 class StateStore {
 public:
@@ -25,6 +25,6 @@ private:
     std::unordered_map<StateKey, StateRecord, StateKeyHash> states_;
 };
 
-}  // namespace slam::runtime
+}  // namespace fork_spatial::runtime
 
 #endif

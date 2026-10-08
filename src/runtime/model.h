@@ -1,5 +1,5 @@
-#ifndef SLAM_RUNTIME_MODEL_H
-#define SLAM_RUNTIME_MODEL_H
+#ifndef FORK_SPATIAL_RUNTIME_MODEL_H
+#define FORK_SPATIAL_RUNTIME_MODEL_H
 
 #include <cstddef>
 #include <cstdint>
@@ -8,7 +8,7 @@
 #include <variant>
 #include <vector>
 
-namespace slam::runtime {
+namespace fork_spatial::runtime {
 
 using Timestamp = std::int64_t;
 using FactorId = std::uint64_t;
@@ -135,6 +135,6 @@ struct SubmitResult {
     explicit operator bool() const noexcept { return code == SubmitCode::Accepted; }
 };
 
-}  // namespace slam::runtime
+}  // namespace fork_spatial::runtime
 
 #endif
